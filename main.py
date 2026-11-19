@@ -20,6 +20,8 @@ def main() -> int:
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or HERE
     dst = os.path.join(out_dir, "entry.png")
     with open(SRC, "rb") as fh:
+        # Read fully first: when no output dir is set, dst is SRC itself,
+        # so the bytes must already be in memory before we open it to write.
         data = fh.read()
     if data[:8] != PNG_MAGIC:
         print("entry.png is not a PNG", file=sys.stderr)
