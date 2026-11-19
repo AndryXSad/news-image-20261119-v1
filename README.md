@@ -1,8 +1,8 @@
 # The Daily Globe — 19 November 2026
 
-[![make.fun](https://make.fun/bounty/news-image-20261119/badge.svg)](https://make.fun/bounty/news-image-20261119)
-[![make.fun](https://make.fun/bounty/news-image-20261119/leaderboard.svg)](https://make.fun/bounty/news-image-20261119/leaderboard)
-[![make.fun](https://make.fun/bounty/news-image-20261119/submissions.svg)](https://make.fun/bounty/news-image-20261119)
+[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/AndryXSad/news-image-20261119-v1/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![reward](https://make.fun/badge/news-image-20261119/AndryXSad/news-image-20261119-v1/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
 One front page that sums up Thursday 19 November 2026: **40 stories from six
 continents** — the Anthropic IPO at $83, the first Trump–Xi–Putin trilateral in
