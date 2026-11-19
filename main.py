@@ -1,41 +1,30 @@
 #!/usr/bin/env python3
-"""news-image-20261119 entry: copy the bundled front-page image to the output dir.
+"""THE DAILY GLOBE, Thu 19 Nov 2026 — entry program.
 
-The image itself lives in this repository as entry.png. It was rendered by the
-builder from reporting dated 19 November 2026 (a newspaper front page,
-"The Daily Globe", with 30 stories). This program only copies bytes: no
-network, no randomness, and no writes outside $MAKEFUN_OUTPUT_DIR when set.
+Copies the bundled front-page image to the output directory.
+Standard library only, no network, no randomness: two runs write
+identical bytes.
 """
-import hashlib
 import os
+import shutil
 import sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(HERE, "entry.png")
-PNG_MAGIC = b"\x89PNG\r\n\x1a\n"
-MAX_BYTES = 1048576
+IMAGE_NAME = "entry.png"
 
 
-def main() -> int:
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or HERE
-    dst = os.path.join(out_dir, "entry.png")
-    with open(SRC, "rb") as fh:
-        # Read fully first: when no output dir is set, dst is SRC itself,
-        # so the bytes must already be in memory before we open it to write.
-        data = fh.read()
-    if data[:8] != PNG_MAGIC:
-        print("entry.png is not a PNG", file=sys.stderr)
+def main():
+    here = os.path.dirname(os.path.abspath(__file__))
+    source = os.path.join(here, IMAGE_NAME)
+    if not os.path.isfile(source):
+        print("missing bundled image: " + IMAGE_NAME, file=sys.stderr)
         return 1
-    if len(data) > MAX_BYTES:
-        print("entry.png exceeds 1 MiB", file=sys.stderr)
-        return 1
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or here
     os.makedirs(out_dir, exist_ok=True)
-    with open(dst, "wb") as fh:
-        fh.write(data)
-    print("wrote %s (%d bytes, sha256 %s)"
-          % (dst, len(data), hashlib.sha256(data).hexdigest()))
+    target = os.path.join(out_dir, IMAGE_NAME)
+    if os.path.abspath(source) != os.path.abspath(target):
+        shutil.copyfile(source, target)
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())
