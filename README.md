@@ -5,9 +5,10 @@
 [![reward](https://make.fun/badge/news-image-20261119/AndryXSad/news-image-20261119-v1/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
 One front page that sums up Thursday 19 November 2026: **40 stories from six
-continents** — the Anthropic IPO at $83, the first Trump–Xi–Putin trilateral in
-Shenzhen, and Nvidia's $115.8bn quarter, plus a world map with eight places in
-the news, one top story from each continent, and a 20-item round-up.
+continents, three leads, and a DATE CHECK** — the Anthropic IPO at $83, the
+first Trump–Xi–Putin trilateral in Shenzhen, and Nvidia's $115.8bn quarter,
+plus a dark world map with eight places in the news, a day-in-figures strip,
+one top story from each continent, and a 20-item round-up.
 
 ## The page
 
@@ -16,10 +17,14 @@ the news, one top story from each continent, and a 20-item round-up.
   $81.3bn raised, ~$1.5tn valuation).
 - **Summit, illustrated:** Trump, Xi and Putin open the first trilateral at
   APEC Shenzhen, with a drawn skyline of the city.
-- **Earnings, charted:** Nvidia sales $115.8bn, up 103% year on year, with a
-  Q3 2025 vs Q3 2026 bar chart (data-centre sales $107.6bn; shares −2.9%).
-- **The world:** a map with eight numbered pins (Gaza, the Gulf, Crimea,
+- **Earnings:** Nvidia sales $115.8bn, up 103% year on year
+  (data-centre sales $107.6bn; shares −2.9%).
+- **The world:** a dark map with eight numbered pins (Gaza, the Gulf, Crimea,
   Finland, Miami, Washington, the Bay of Bengal, Tallinn) and a key.
+- **The day in figures:** $83 (Anthropic IPO open), $115.8bn (Nvidia Q3
+  sales), $1tn (South Korea exports), 980m (Anthropic shares sold).
+- **DATE CHECK:** a box in the masthead confirms the day — Thursday
+  19 November 2026.
 - **Six continents:** one top story from each — Jeffries nominated House
   Speaker (North America), the isolated Awa group makes rare contact
   (South America), the EU greenlights the Indonesia trade pact (Europe),
